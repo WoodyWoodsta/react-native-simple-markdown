@@ -193,7 +193,7 @@ export default (styles) => ({
         !state.withinText ? textStyles.push(styles.plainText) : null
         state.stylesToApply ? textStyles.push(state.stylesToApply) : null
         return createElement(Text, {
-          key: state.key,
+          key: i,
           style: textStyles
         }, word)
       })
